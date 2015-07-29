@@ -5,8 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<title>Justin's Portfolio</title>
@@ -14,12 +12,25 @@
 <body>
 	<section class="container">
 		<section class="row">
-			<header class="col-md-6">
+			<figure class="col-md-6">
 				<img class="title-logo" src="images/udacity-logo.jpg" alt="Udacity logo">
-			</header>
+			</figure>
 			<header class="col-md-6 text-right text-uppercase">
 				<h1 class="title-super text-thin">Justin Stout</h1>
 				<h4>Front-end Ninja</h4>
+				<div class="dropdown pull-right">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Quick Links
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="portfolio.html">Home</a></li>
+						<li><a href="https://www.github.com/jstout38/Project-1">Project 1</a></li>
+						<li><a href="https://www.github.com/jstout38/Project-2">Project 2</a></li>
+						<li><a href="https://www.github.com/jstout38/Project-3">Project 3</a></li>
+						<li><a href="https://www.github.com/jstout38/">GitHub Home</a></li>
+					</ul>
+				</div>
 			</header>
 		</section>
 		<section class="row">
@@ -28,79 +39,85 @@
 			</figure>
 		</section>
 		<section class="row">
-			<img class="img-responsive" src="images/Ben-Newman-1920x1200-LARGE.jpg"  alt="City Skyline">
+			<div class="col-md-12">
+				<img class="img-responsive" src="images/Ben-Newman-1920x1200-LARGE.jpg"  alt="City Skyline">
+			</div>
 		</section>
 		<section class="row">
-			<h2 class="text-muted">Featured Work</h2>
+			<div class="col-md-12">
+				<h2 class="text-muted">Featured Work</h2>
+			</div>
 		</section>
 		<section class="row text-center">
-			<figure class="col-md-4">
+			<article class="col-md-4">
 				<img class="img-responsive" src="images/kim-holtermand-power-station-1920x1200-SMALL.jpg" data-toggle="modal" data-target="#project1" alt="power station">
 				<h3>PROJECT 1</h3>
-				<p>https://github.com/jstout38/project1</p>
-			</figure>
-			<figure class="col-md-4">
+				<p><a href="https://github.com/jstout38/Project-1">https://github.com/jstout38/project1</a></p>
+			</article>
+			<article class="col-md-4">
 				<img class="img-responsive" src="images/philipp-dornbierer-1920x1200-SMALL.jpg" data-toggle="modal" data-target="#project2" alt="giant fox">
 				<h3>PROJECT 2</h3>
-				<p>https://github.com/jstout38/project2</p>
-			</figure>
-			<figure class="col-md-4">
+				<p><a href="https://github.com/jstout38/Project-2">https://github.com/jstout38/project2</a></p>
+			</article>
+			<article class="col-md-4">
 				<img class="img-responsive" src="images/trevor-basset-wallpaper-1920x1200-SMALL.jpg" data-toggle="modal" data-target="#project3" alt="buffalo and cowboy">
 				<h3>PROJECT 3</h3>
-				<p>https://github.com/jstout38/project3</p>
-			</figure>
+				<p><a href="https://github.com/jstout38/Project-3">https://github.com/jstout38/project3</a></p>
+			</article>
 		</section>
 	</section>
 	<!-- Modal -->
 	<div id="project1" class="modal fade" role="dialog">
-	  	<div class="modal-dialog">
-	    	<!-- Modal content-->
-	    	<div class="modal-content">
-	      		<div class="modal-header">
-	        		<h4 class="modal-title">Project 1</h4>
-	     		</div>
-	      		<div class="modal-body">
-	        		<p>Project 1 is the site you are looking at right now.</p>
-	      		</div>
-	      		<div class="modal-footer">
-	        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      		</div>
-	    	</div>
-	  	</div>
-	 </div>
+		<div class="modal-dialog">
+		<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Project 1</h4>
+				</div>
+				<div class="modal-body">
+					<p>Project 1 is the site you are looking at right now.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal -->
 	<div id="project2" class="modal fade" role="dialog">
-	  	<div class="modal-dialog">
-	    	<!-- Modal content-->
-	    	<div class="modal-content">
-	      		<div class="modal-header">
-	       			<h4 class="modal-title">Project 2</h4>
-	      		</div>
-	      		<div class="modal-body">
-	        		<p>Project 2 will be an interactive resume.</p>
-	      		</div>
-	      		<div class="modal-footer">
-	        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      		</div>
-	    	</div>
-	 	</div>
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Project 2</h4>
+				</div>
+				<div class="modal-body">
+					<p>Project 2 will be an interactive resume.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- Modal -->
 	<div id="project3" class="modal fade" role="dialog">
-	  	<div class="modal-dialog">
-	    	<!-- Modal content-->
-	    	<div class="modal-content">
-	      		<div class="modal-header">
-	        		<h4 class="modal-title">Project 3</h4>
-	      		</div>
-	      		<div class="modal-body">
-	        		<p>Project 3 will be an interactive game.</p>
-	      		</div>
-	      		<div class="modal-footer">
-	        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      		</div>
-	    	</div>
-	  	</div>
-	 </div>
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Project 3</h4>
+				</div>
+				<div class="modal-body">
+					<p>Project 3 will be an interactive game.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

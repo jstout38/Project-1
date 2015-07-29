@@ -383,6 +383,7 @@
   "css": [
     "type.less",
     "grid.less",
+    "dropdowns.less",
     "modals.less"
   ],
   "js": [
@@ -399,5 +400,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=a15128def9671e723ad7"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=ca30acfadcd4d0cd0221"
 }
